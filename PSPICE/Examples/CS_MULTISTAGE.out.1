@@ -1,0 +1,168 @@
+
+**** 11/17/21 20:28:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ CS_MULTISTAGE
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+VSIG 1 8 AC 1E-3
+VBIAS 8 0 DC 2
+RIN 1 2 200
+VDD 5 0 12
+RD1 5 4 1E3
+M1 4 2 3 3 NMOD1
+RS 3 0 200
+CBY 3 0 500E-9
+CB 4 6 100E-9
+RVB1 5 6 100E3
+RVB2 6 0 10E3
+RD2 5 7 1E3
+M2 7 6 0 0 NMOD2 
+.MODEL NMOD1 NMOS (CGSO=250E-12 CGDO=80E-12 VTO=1 KP=0.02)
+.MODEL NMOD2 NMOS (CGSO=250E-12 CGDO=80E-12 VTO=0.5 KP=0.115)
+.OP
+.PROBE
+.AC DEC 1000 1 1E10
+.END
+
+**** 11/17/21 20:28:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ CS_MULTISTAGE
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOD1           NMOD2           
+               NMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    1                .5          
+          KP     .02             .115        
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO  250.000000E-12  250.000000E-12 
+        CGDO   80.000000E-12   80.000000E-12 
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 11/17/21 20:28:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ CS_MULTISTAGE
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    2.0000  (    2)    2.0000  (    3)     .5000  (    4)    9.5000      
+
+(    5)   12.0000  (    6)    1.0909  (    7)     .2112  (    8)    2.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    VSIG         0.000E+00
+    VBIAS        0.000E+00
+    VDD         -1.440E-02
+
+    TOTAL POWER DISSIPATION   1.73E-01  WATTS
+
+
+**** 11/17/21 20:28:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ CS_MULTISTAGE
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M1          M2        
+MODEL        NMOD1       NMOD2     
+ID           2.50E-03    1.18E-02 
+VGS          1.50E+00    1.09E+00 
+VDS          9.00E+00    2.11E-01 
+VBS          0.00E+00    0.00E+00 
+VTH          1.00E+00    5.00E-01 
+VDSAT        5.00E-01    5.91E-01 
+Lin0/Sat1   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00 
+GM           1.00E-02    2.43E-02 
+GDS          0.00E+00    4.37E-02 
+GMB          0.00E+00    0.00E+00 
+CBD          0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00 
+CGSOV        2.50E-14    2.50E-14 
+CGDOV        8.00E-15    8.00E-15 
+CGBOV        0.00E+00    0.00E+00 
+CGS          0.00E+00    0.00E+00 
+CGD          0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+**** 11/17/21 20:28:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ CS_MULTISTAGE
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .19
+

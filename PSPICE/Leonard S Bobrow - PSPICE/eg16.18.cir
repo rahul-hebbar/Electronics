@@ -1,0 +1,7 @@
+eg16.18
+V1 1 0 DC 0
+D1 1 0 DMOD
+.MODEL DMOD D (Is=1n N=2)
+.DC V1 0 1 0.01
+.PROBE
+.END

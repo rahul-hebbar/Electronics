@@ -1,0 +1,84 @@
+
+**** 11/26/21 11:28:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ INVERTER_RESISTIVE_LOAD
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 1
+VDD 3 0 DC 10
+R1 3 2 2E3
+M1 2 1 0 0 NMOD
+.MODEL NMOD NMOS (KP=0.5E-3 VTO=1)
+.DC V1 0 10 0.01
+.PROBE
+.END
+
+**** 11/26/21 11:28:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ INVERTER_RESISTIVE_LOAD
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOD            
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    1            
+          KP  500.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+**** 11/26/21 11:28:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ INVERTER_RESISTIVE_LOAD
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

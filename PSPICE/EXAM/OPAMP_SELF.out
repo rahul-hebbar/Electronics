@@ -1,0 +1,87 @@
+
+**** 10/25/21 15:23:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ OPAMP_SELF
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 0.1
+R1 1 3 1E3
+R2 2 0 1E3
+R3 2 6 100E3
+RL 6 0 10E3
+E 6 0 3 2 10E6
+.TRAN 1 1
+.PRINT TRAN V(6)
+.END
+
+**** 10/25/21 15:23:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ OPAMP_SELF
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)     .1000  (    2)     .1000  (    3)     .1000  (    6)   10.1000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1           0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/25/21 15:23:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ OPAMP_SELF
+
+
+ ****     TRANSIENT ANALYSIS               TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  TIME        V(6)        
+
+   0.000E+00   1.010E+01
+   1.000E+00   1.010E+01
+
+
+
+
+          JOB CONCLUDED
+
+**** 10/25/21 15:23:22 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ OPAMP_SELF
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

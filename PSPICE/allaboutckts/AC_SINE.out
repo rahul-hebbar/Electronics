@@ -1,0 +1,64 @@
+
+**** 09/24/21 11:53:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ACSINE
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 SIN(0 15 60)
+R1 1 0 10E3
+.TRAN 2E-3 20E-3 0
+.PROBE
+.END
+
+**** 09/24/21 11:53:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ACSINE
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1           0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/24/21 11:53:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ACSINE
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

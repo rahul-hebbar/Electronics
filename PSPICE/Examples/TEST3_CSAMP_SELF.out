@@ -1,0 +1,120 @@
+
+**** 10/25/21 11:52:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ TEST3_CSAMP_SELF
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 AC 1E-3
+CC1 1 2 1E-6
+RB1 3 2 2E6
+RB2 2 0 1E6
+VD 3 0 12
+RD 3 4 4E3
+CC2 4 5 1E-6
+RL 5 0 4E3
+M1 4 2 0 0 NMOD
+.MODEL NMOD NMOS (KP=0.5E-3 VTO=2)
+.AC DEC 1000 1 1E6
+.PROBE
+.END
+
+**** 10/25/21 11:52:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ TEST3_CSAMP_SELF
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOD            
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    2            
+          KP  500.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 10/25/21 11:52:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ TEST3_CSAMP_SELF
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    4.0000  (    3)   12.0000  (    4)    8.0000      
+
+(    5)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1           0.000E+00
+    VD          -1.004E-03
+
+    TOTAL POWER DISSIPATION   1.20E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/25/21 11:52:10 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ TEST3_CSAMP_SELF
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

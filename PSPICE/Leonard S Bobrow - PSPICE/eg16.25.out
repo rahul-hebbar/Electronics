@@ -1,0 +1,112 @@
+
+**** 10/24/21 16:26:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.25
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 18
+RD 1 2 500
+RS 3 0 1000
+J 2 0 3 JMOD
+.MODEL JMOD NJF (BETA=0.5E-3 VTO=-4)
+.OP
+.END
+
+**** 10/24/21 16:26:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.25
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               JMOD            
+               NJF             
+         VTO   -4            
+        BETA  500.000000E-06 
+
+
+**** 10/24/21 16:26:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.25
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)   18.0000  (    2)   17.0000  (    3)    2.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1          -2.000E-03
+
+    TOTAL POWER DISSIPATION   3.60E-02  WATTS
+
+
+**** 10/24/21 16:26:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.25
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** JFETS
+
+
+NAME         J         
+MODEL        JMOD      
+ID           2.00E-03 
+VGS         -2.00E+00 
+VDS          1.50E+01 
+GM           2.00E-03 
+GDS          0.00E+00 
+CGS          0.00E+00 
+CGD          0.00E+00 
+
+          JOB CONCLUDED
+
+**** 10/24/21 16:26:13 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.25
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

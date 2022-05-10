@@ -1,0 +1,66 @@
+
+**** 09/24/21 11:47:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ RCCKT
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 10
+C1 1 2 47E-6 IC=0
+C2 1 2 22E-6 IC=0
+R1 2 0 3.3E3
+.TRAN 0.01 2 0
+.PROBE
+.END
+
+**** 09/24/21 11:47:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ RCCKT
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)   10.0000  (    2)   10.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1          -3.030E-03
+
+    TOTAL POWER DISSIPATION   3.03E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/24/21 11:47:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ RCCKT
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

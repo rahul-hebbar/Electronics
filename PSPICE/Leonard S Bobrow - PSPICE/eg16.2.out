@@ -1,0 +1,67 @@
+
+**** 09/13/21 08:22:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ eg16.2
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 24
+R1 1 2 2
+R2 2 0 6
+V2 2 3 DC 4
+R3 3 0 8
+I1 3 0 DC 3
+.END
+
+**** 09/13/21 08:22:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ eg16.2
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)   24.0000  (    2)   12.0000  (    3)    8.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1          -6.000E+00
+    V2           4.000E+00
+
+    TOTAL POWER DISSIPATION   1.28E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/13/21 08:22:46 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ eg16.2
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

@@ -1,0 +1,23 @@
+Circuit: * D:\Code\PSPICE\Schematic\cm_opamp.asc
+
+WARNING: Node NC_01 is floating.
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Feb 19 19:52:07 2022
+Total elapsed time: 0.563 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 92350
+traniter = 92339
+tranpoints = 29283
+accept = 19836
+rejected = 9447
+matrix size = 14
+fillins = 8
+solver = Normal
+Matrix Compiler1: 1.53 KB object code size  0.4/0.3/[0.1]
+Matrix Compiler2: 1.50 KB object code size  0.3/0.3/[0.2]
+

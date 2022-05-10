@@ -1,0 +1,151 @@
+
+**** 10/24/21 16:31:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.26
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 12
+M1 1 1 2 2 NMOD
+M2 2 0 0 0 NMOD
+.MODEL NMOD NMOS (VTO=-4 KP=2E-3)\
+.OP
+.END
+
+**** 10/24/21 16:31:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.26
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOD            
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO   -4            
+          KP    2.000000E-03 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 10/24/21 16:31:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.26
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)   12.0000  (    2)   10.3430  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1          -1.600E-02
+
+    TOTAL POWER DISSIPATION   1.92E-01  WATTS
+
+
+**** 10/24/21 16:31:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.26
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M1          M2        
+MODEL        NMOD        NMOD      
+ID           1.60E-02    1.60E-02 
+VGS          1.66E+00    0.00E+00 
+VDS          1.66E+00    1.03E+01 
+VBS          0.00E+00    0.00E+00 
+VTH         -4.00E+00   -4.00E+00 
+VDSAT        5.66E+00    4.00E+00 
+Lin0/Sat1   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00 
+GM           3.31E-03    8.00E-03 
+GDS          8.00E-03    0.00E+00 
+GMB          0.00E+00    0.00E+00 
+CBD          0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00 
+CGSOV        0.00E+00    0.00E+00 
+CGDOV        0.00E+00    0.00E+00 
+CGBOV        0.00E+00    0.00E+00 
+CGS          0.00E+00    0.00E+00 
+CGD          0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+**** 10/24/21 16:31:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG16.26
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

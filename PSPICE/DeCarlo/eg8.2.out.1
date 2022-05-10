@@ -1,0 +1,25 @@
+
+**** 10/25/21 06:39:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG8.2
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+R1 1 0 5
+S1 1 2 6 0 SMOD
+R2 2 0 20
+L1 2 0 8 IC=10
+VC 6 0 PWL(0 0 0 0.4 0.4 1)
+.MODEL SMOD VSWITCH (VTO=0.5)
+---------------------$
+ERROR -- 'VTO' is not a model parameter name
+.TRAN 0.01 1
+.PROBE
+.END
+

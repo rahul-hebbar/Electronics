@@ -1,0 +1,27 @@
+
+**** 09/24/21 22:13:56 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ OPAMP-INT-SIN-INP
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+VIN 1 0 SIN(0 10 50)
+VIN 1 0 AC 1
+
+ERROR(ORPSIM-15089): Can not re-define VIN. VIN is either a system defined variable or has already been defined
+----$
+ERROR(ORPSIM-16371): Extra text on line
+R1 2 1 10E3
+C1 2 3 10E-6
+R2 2 3 20
+E1 3 0 0 2 999E3
+.TRAN 0.01 50E-3 0
+.PROBE
+.END
+

@@ -1,0 +1,59 @@
+
+**** 11/10/21 11:03:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DOUBLE_CLIPPER_DIODE
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 1
+R1 1 2 100
+D1 2 3 DMOD
+D2 4 2 DMOD
+VR1 3 0 DC 5
+VR2 4 0 DC 4
+.MODEL DMOD D
+*.TRAN 0.01 2 0
+.DC V1 -10 10 0.1
+.PROBE
+.END
+
+**** 11/10/21 11:03:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DOUBLE_CLIPPER_DIODE
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DMOD            
+          IS   10.000000E-15 
+
+
+
+          JOB CONCLUDED
+
+**** 11/10/21 11:03:07 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DOUBLE_CLIPPER_DIODE
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

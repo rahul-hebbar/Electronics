@@ -1,0 +1,27 @@
+
+**** 11/26/21 11:04:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ INVERTER_CMOS
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 1
+VDD 3 0 DC 5
+M1 2 1 3 3 PMOD
+M2 2 1 0 0 NMOD
+.MODEL NMOD NMOS (KP=0.5E-3 VT=1)
+----------------------------$
+ERROR -- 'VT' is not a model parameter name
+.MODEL PMOD PMOS (KP=0.5E-3 VT=-1)
+----------------------------$
+ERROR -- 'VT' is not a model parameter name
+.DC V1 0 10 0.01
+.PROBE
+.END
+

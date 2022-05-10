@@ -1,0 +1,30 @@
+
+**** 11/10/21 10:56:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DOUBLE_CLIPPER_DIODE
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 6 0 SIN(0 10 1)
+R1 6 1 10
+D1 1 2 DMOD
+R1 2 4 10
+
+ERROR(ORPSIM-15089): Can not re-define R1. R1 is either a system defined variable or has already been defined
+---$
+ERROR(ORPSIM-16371): Extra text on line
+VREF1 4 0 DC 5
+D2 3 1 DMOD
+R2 3 5 10
+VREF2 5 0 DC 5
+.MODEL DMOD D
+.TRAN 0.01 2 0
+.PROBE
+.END
+

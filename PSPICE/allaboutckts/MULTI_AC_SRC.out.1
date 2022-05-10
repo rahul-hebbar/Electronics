@@ -1,0 +1,86 @@
+
+**** 09/24/21 17:25:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ MULTI-AC-SRC
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 AC 55
+V2 4 0 AC 43 25
+L1 1 2 450E-3
+L2 2 3 150E-3
+R1 3 4 1E-12
+C1 2 0 330E-6
+.AC LIN 1 30 30
+.PRINT AC V(2,0)
+.END
+
+**** 09/24/21 17:25:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ MULTI-AC-SRC
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  (    3)    0.0000  (    4)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1           0.000E+00
+    V2           0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 09/24/21 17:25:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ MULTI-AC-SRC
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        V(2,0)      
+
+
+   3.000E+01   1.413E+02
+
+
+          JOB CONCLUDED
+
+**** 09/24/21 17:25:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ MULTI-AC-SRC
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

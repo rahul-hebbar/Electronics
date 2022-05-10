@@ -1,0 +1,111 @@
+
+**** 11/10/21 10:16:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DIODE_FWBR_V_CHAR
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 1
+D1 1 2 DMOD
+D3 3 1 DMOD
+D2 0 2 DMOD
+D4 3 0 DMOD
+RL 2 3 10E3
+.MODEL DMOD D
+.DC V1 -10 10 0.1
+.PROBE V(2,3)
+.OP
+.END
+
+**** 11/10/21 10:16:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DIODE_FWBR_V_CHAR
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DMOD            
+          IS   10.000000E-15 
+
+
+**** 11/10/21 10:16:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DIODE_FWBR_V_CHAR
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    1.0000  (    2)     .5088  (    3)     .4912  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1          -1.767E-06
+
+    TOTAL POWER DISSIPATION   1.77E-06  WATTS
+
+
+**** 11/10/21 10:16:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DIODE_FWBR_V_CHAR
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D1          D3          D2          D4        
+MODEL        DMOD        DMOD        DMOD        DMOD      
+ID           1.77E-06   -5.19E-13   -5.19E-13    1.77E-06 
+VD           4.91E-01   -5.09E-01   -5.09E-01    4.91E-01 
+REQ          1.46E+04    1.00E+12    1.00E+12    1.46E+04 
+CAP          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+**** 11/10/21 10:16:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ DIODE_FWBR_V_CHAR
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

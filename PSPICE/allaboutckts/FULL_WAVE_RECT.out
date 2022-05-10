@@ -1,0 +1,87 @@
+
+**** 11/09/21 23:28:54 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ FULL-WAVE-BRIDGE-RECTIFER
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 SIN(0 15 60)
+D1 1 2 DMOD
+D3 3 1 DMOD
+D2 0 2 DMOD
+D4 3 0 DMOD
+RL 2 3 10E3
+*CL 2 3 3.5E-6
+.MODEL DMOD D 
+.TRAN 2.5E-3 5E-2 0
+.PROBE V(2,3)
+.END
+
+**** 11/09/21 23:28:54 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ FULL-WAVE-BRIDGE-RECTIFER
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DMOD            
+          IS   10.000000E-15 
+
+
+**** 11/09/21 23:28:54 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ FULL-WAVE-BRIDGE-RECTIFER
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)-36.58E-21  (    3)-36.58E-21  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1           0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/09/21 23:28:54 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ FULL-WAVE-BRIDGE-RECTIFER
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

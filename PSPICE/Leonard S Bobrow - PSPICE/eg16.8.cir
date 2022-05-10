@@ -1,0 +1,6 @@
+eg16.8
+R1 1 0 2
+C1 1 0 0.125 IC=6
+.TRAN 0.05 1 0 UIC
+.PLOT TRAN V(1)
+.END

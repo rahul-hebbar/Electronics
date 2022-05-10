@@ -1,0 +1,21 @@
+Circuit: FULL-WAVE-BRIDGE-RECTIFER
+
+.OP point found by inspection.
+
+Date: Tue Nov 09 12:59:43 2021
+Total elapsed time: 0.031 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2176
+traniter = 2176
+tranpoints = 1042
+accept = 1042
+rejected = 0
+matrix size = 4
+fillins = 0
+solver = Normal
+Matrix Compiler1: 118 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+

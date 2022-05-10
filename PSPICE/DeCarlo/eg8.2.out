@@ -1,0 +1,89 @@
+
+**** 10/25/21 06:42:04 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG8.2
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+R1 1 0 5
+S1 1 2 6 0 SMOD
+R2 2 0 20
+L1 2 0 8 IC=10
+VC 6 0 PWL(0 0 0.4 0 0.4 1)
+.MODEL SMOD VSWITCH (VT=0.5)
+.TRAN 0.01 1.4
+.PROBE
+.END
+
+**** 10/25/21 06:42:04 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG8.2
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               SMOD            
+         RON    1            
+        ROFF    1.000000E+12 
+          VT     .5          
+          VH    0            
+          TD    0            
+
+
+**** 10/25/21 06:42:04 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG8.2
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)-1.000E-09  (    2) -200.0000  (    6)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    VC           0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/25/21 06:42:04 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ EG8.2
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

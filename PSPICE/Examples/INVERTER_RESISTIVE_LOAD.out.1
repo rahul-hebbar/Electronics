@@ -1,0 +1,24 @@
+
+**** 11/26/21 11:07:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ INVERTER_RESISTIVE_LOAD
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 DC 1
+VDD 3 0 DC 10
+R1 3 2 1E3
+M1 2 1 0 0 NMOD
+.MODEL NMOD NMOS (KP=0.5E-3 VT=1)
+----------------------------$
+ERROR -- 'VT' is not a model parameter name
+.DC V1 0 10 0.01
+.PROBE
+.END
+

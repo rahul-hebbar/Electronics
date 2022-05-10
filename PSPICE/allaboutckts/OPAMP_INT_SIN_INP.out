@@ -1,0 +1,67 @@
+
+**** 09/24/21 22:20:52 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ OPAMP-INT-SIN-INP
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+VIN 1 0 SIN(0 1 50)
+R1 2 1 100
+C1 2 3 100E-8
+R2 2 3 200
+E1 3 0 0 2 999E3
+.TRAN 0.01 50E-3 0
+.PROBE
+.END
+
+**** 09/24/21 22:20:52 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ OPAMP-INT-SIN-INP
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  (    3)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    VIN          0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/24/21 22:20:52 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ OPAMP-INT-SIN-INP
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+
