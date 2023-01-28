@@ -1,0 +1,26 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2020.1                 C:/Xilinx/Vivado/2020.1
+Matlab 9.8.0.1323502 (R2020a)           C:\Program Files\Polyspace\R2020a
+Vivado 2020.1                           C:/Xilinx/Vivado/2020.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Error("fin_val.m"): line 2:13 floating point constant mus...
+     Block: 'np/MCode3'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'np/MCode3'
+
+Details:
+Error("fin_val.m"): line 2:13 floating point constant must use
+xfix() call
+Error("fin_val.m"): line 3:13 floating point constant must use
+xfix() call
+Error("fin_val.m"): output d1 cannot be a double
+Error("fin_val.m"): output d2 cannot be a double
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
